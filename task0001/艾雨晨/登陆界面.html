@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login </title>
+    <link rel="stylesheet " href="./css/login.css " >
+
+    <script type="text/javascript">
+        function showdiv() {
+            document.getElementById("hlg").style.display="block";
+            document.getElementById("strHref").innerHTML ="-hide-";
+            document.getElementById("strHref").href="javascript:hidediv()";
+        }
+        function hidediv() {
+            document.getElementById("hlg").style.display="none";
+            document.getElementById("strHref").innerHTML ="-click-";
+            document.getElementById("strHref").href="javascript:showdiv()";
+        }
+    </script>
+</head>
+
+<body >
+
+
+    <div id="hlg" style="display: none">
+
+        <div class="login">
+
+        <label for="usename">usename</label>
+            <input type="text" id="usename " placeholder="input usename"><br/>
+        <label for="password" >password</label>
+        <input type="password" id="password " placeholder="input password"><br/>
+        <button type  ="button" onclick="alert('welcome!')" >login</button>
+
+
+         </div>
+
+
+    </div>
+    <a href="javascript:showdiv();" id="strHref" class="btn-slide">-click-</a>
+
+   
+
+</body>
+</html>

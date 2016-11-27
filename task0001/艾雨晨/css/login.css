@@ -1,0 +1,55 @@
+body,html{
+    height: 100%;
+    margin:0;
+}
+
+body{
+    background-image: url("../img/background.png");
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    font-family: Verdana;
+}
+
+.login
+{
+    background-color: rgba(76,201,208,0.2);
+    margin:0 auto;
+    height: 100px;
+    width:320px;
+    border-radius: 6px;
+    position:relative;
+    top:275px;
+    left: 180px;
+    text-align: center;
+    border:#ffffff;
+    color: #ffe400;
+}
+
+.btn-slide
+{
+    position:relative;
+    top:315px;
+    left: 502px;
+    position: absolute;
+    text-decoration:none;
+    color: #4ccad0;
+}
+input {
+
+    height: 16px;
+    width:130px;
+    margin:5px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+
+
+button{
+    height:18px;
+    width: 50px;
+    margin: 5px;
+    color: #ffe400;
+    background-color: #4db6bb ;
+    border-radius: 3px;
+}
