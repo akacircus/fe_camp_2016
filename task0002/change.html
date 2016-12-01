@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PictureSwitch</title>
+
+    <link rel="stylesheet " href="change.css">
+</head>
+
+
+<body >
+
+<div class="img-box">
+    <img id="img" src="img/xx.png">
+</div>
+<div id="bg"></div>
+
+<div class="btn-box">
+    <button id="xx" >小新</button>
+    <button id="bw" >巴卫</button>
+</div>
+
+<script>
+    var btn1=document.getElementById("xx");
+    var btn2=document.getElementById("bw");
+    var img=document.getElementById("img");
+    var bg=document.getElementById("bg");
+
+    btn1.onclick=function(){
+        img.setAttribute("src","img/xx.png");
+       document.getElementById("bg").style.backgroundImage="url('img/xx-bg.png')";
+       document.getElementById("xx").style.backgroundImage="url('img/btn-blue.png')";
+        document.getElementById("bw").style.backgroundImage="url('img/btn-gray.png')";
+        document.getElementById("xx").style.color="#3a3f3e" ;
+        document.getElementById("bw").style.color="#94cad4";
+
+    }
+    btn2.onclick=function(){
+
+        img.setAttribute("src","img/bw.png");
+        document.getElementById("bg").style.backgroundImage="url('img/bw-bg.png') ";
+        document.getElementById("bw").style.backgroundImage="url('img/btn-blue.png')";
+        document.getElementById("xx").style.backgroundImage="url('img/btn-gray.png')";
+        document.getElementById("bw").style.color="#3a3f3e" ;
+        document.getElementById("xx").style.color="#94cad4";
+
+    }
+
+</script>
+
+
+</body>
+</html>

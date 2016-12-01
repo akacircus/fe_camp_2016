@@ -1,0 +1,37 @@
+#bg{
+    height: 786px;
+    width: 1366px;
+    background-image: url("img/xx-bg.png");
+    position: absolute;
+    z-index: -1;
+    top:0;
+}
+.btn-box button{
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    outline: none;
+    border-radius: 5px;
+}
+#bw{
+    position: absolute;
+    left:650px;
+    top:200px;
+    background-image: url("img/btn-gray.png");
+    color:#94cad4 ;
+}
+
+#xx{
+    position: absolute;
+    left:650px;
+    top:350px;
+    background-image: url("img/btn-blue.png");
+    color: #3a3f3e;
+}
+
+#img{
+    height: 350px;
+    position: relative;
+    top:100px;
+    left: 200px;
+}
