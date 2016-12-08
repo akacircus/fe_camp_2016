@@ -1,0 +1,5 @@
+[在线颜色选择器](http://www.atool.org/colorpicker.php)
+
+##不合理
+*悬浮窗没有设置z-index 会被其他图片遮挡  
+*没有设置悬浮框背景颜色 会和其他内容混在一起

@@ -1,0 +1,30 @@
+##之前
+
+  <dd class="regForm-item-ct txt-tips">
+  <label ></label>
+  <input id="mobileAcceptIpt" type="checkbox" checked="checked" tabindex="-1" class=""> 
+   同意
+ <a href="http://reg.163.com/agreement.shtml" target="_blank" tabindex="-1">"服务条款"</a>
+    和
+   <a href="javascript:void(0);" onclick="noticePopup.show();return false;" tabindex="-1">"用户须知"</a>
+   、<a href="http://reg.163.com/agreement_game.shtml" target="_blank" tabindex="-1">"隐私权相关政策"</a>
+	<div id="mobileAcceptTips" style="display: block;"></div>
+   </dd>
+
+
+##之后
+
+<dd class="regForm-item-ct txt-tips">
+    <label ></label>
+    <input id="mobileAcceptIpt" type="checkbox" checked="checked" tabindex="-1" class="">
+  
+ ** <label for="mobileAcceptIpt">同意</label>**
+    
+   <a href="http://reg.163.com/agreement.shtml" target="_blank" tabindex="-1">"服务条款"</a>
+   
+**<label for="mobileAcceptIpt">和</label> **
+   
+ <a href="javascript:void(0);" onclick="noticePopup.show();return false;" tabindex="-1">"用户须知"</a>
+    、<a href="http://reg.163.com/agreement_game.shtml" target="_blank" tabindex="-1">"隐私权相关政策"</a>
+    <div id="mobileAcceptTips" style="display: block;"></div>
+</dd>

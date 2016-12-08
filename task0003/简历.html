@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简历</title>
+
+    <script type="text/javascript">
+        function showdiv() {
+
+            document.getElementById("strHref").innerHTML ="暂时没有呢";
+            document.getElementById("strHref").href="javascript:hidediv()";
+        }
+        function hidediv() {
+
+            document.getElementById("strHref").innerHTML ="-click-";
+            document.getElementById("strHref").href="javascript:showdiv()";
+        }
+    </script>
+
+</head>
+<body>
+<article  style="text-align: center">
+    <header>
+        <h1>简历</h1>
+    </header>
+    <hr>
+    <section>
+        <h2 >基本信息</h2>
+        <img src="me.jpg" width="200">
+        <p>艾雨晨，女</p>
+    </section>
+
+    <section>
+        <h2>教育信息</h2>
+        <p>就读于<a href="http://www.hust.edu.cn/" target="_blank">华中科技大学</a>，现为大一学生</p>
+    </section>
+    <section>
+        <h2>实习和项目经验</h2>
+        <a href="javascript:showdiv();" id="strHref" >-click-</a>
+
+    </section>
+</article>
+
+
+
+</body>
+</html>
