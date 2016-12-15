@@ -1,0 +1,163 @@
+html
+{
+    font-family:"microsoft yahei";
+    background-color: rgb(245,245,245);
+    overflow-x: hidden;
+}
+
+.topp
+{
+    position:fixed;
+    top:0px;
+    left: -2px;
+    z-index:9998;
+    width: 105%;
+    height: 40px;
+    background-color: #36B9B1;}
+
+
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top:6px;
+    overflow: hidden;
+
+}
+
+
+
+.top li
+{
+    display: block;
+    width:80px;
+    float:left;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    left:730px;
+    top:2px;
+}
+
+.top a:link,.top a:visited
+{
+    background-color:#36B9B1;
+    text-align:center;
+    padding:6px;
+    text-decoration:none;
+    color: white;
+}
+
+.top a:hover,a:active
+{
+    background-color:rgb(19,150,142);
+}
+
+.toplogo
+{
+    z-index: 9999;
+    position: absolute;
+}
+
+#tl
+{
+    width: 110px;
+    position: absolute;
+    top:5px;
+    left:250px;
+}
+
+.blankfi
+{
+    width: 100px;
+    height: 40px;
+    background-color: #36B9B1;
+}
+
+#title
+{
+    position: absolute;
+    top:250px;
+    left:230px;
+}
+
+#content
+{
+    position: absolute;
+    top:380px;
+    left:230px;
+}
+#online
+{
+    position: absolute;
+    top:380px;
+    left:800px;
+}
+
+#download
+{
+    color:rgb(101,174,167);
+    position: absolute;
+    top:440px;
+    left:865px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.p2
+{
+    position: absolute;
+    top:800px;
+}
+
+#p2bg
+{
+    z-index: 10;
+}
+
+#ttitle
+{
+    position: absolute;
+    top:17px;
+    left:535px;
+    z-index: 20;
+    font-size: 25px;
+    color: white;
+}
+
+.btn
+{
+    z-index: 20;
+    position: absolute;
+    top:100px;
+    left:330px;
+
+}
+
+.button
+{
+    width: 90px;
+    height:33px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(182,229,228);
+    margin: 20px;
+}
+
+.mid
+{
+    position: absolute;
+    top:237px;
+    left: 250px;
+    z-index: 20;
+}
+
+.midword
+{
+    position: absolute;
+    top:290px;
+    left:530px;
+    color: white;
+}
