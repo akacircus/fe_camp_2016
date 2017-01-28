@@ -1,0 +1,48 @@
+*{
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+body{
+    background-image: url("img/lm.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.dao{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 3vw;
+    left: 10%;
+}
+.dao img{
+    height: calc(15px + 0.5vw);
+    padding: 2.5vw;
+}
+.wordlm{
+    width: 50%;
+    position: relative;
+    left: 10%;
+    top: calc( 65px + 4.5vw);
+}
+[class^="lmw"]{
+    position: relative;
+}
+.lmw2{
+    top:3vw;
+}
+.lmw3{
+    top:7vw;
+}
+.lmw4{
+    top:12vw;
+}
+.lmw5{
+    top:17vw;
+}
+.lmw6{
+    top:20vw;
+}

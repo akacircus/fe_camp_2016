@@ -1,0 +1,317 @@
+*{
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+body{
+    height: 100%;
+    background-image: url("img/bg.jpg");
+
+}
+
+header{
+    position: absolute;
+    width: 64vw;
+    margin-left: -32vw;
+    left: 50%;
+    box-shadow: 5px -25px 45px rgb(158, 158, 158);
+    z-index: 20;
+}
+.banner{
+    background-color: rgb(23,22,28);
+}
+
+
+.gong{
+    background-image: url("img/宫崎骏.jpg ");
+    background-size: cover;
+    position: relative;
+    width: 64vw;
+    height: 33vw;
+}
+
+.wordgong{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    color: white;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    line-height: 5vw;
+    letter-spacing: 1vw;
+    font-size: calc(12.5px + 0.8vw);
+}
+
+nav{
+    position: relative;
+    width: 100%;
+    display: table;
+    line-height: 4;
+}
+
+nav a {
+    display: table-cell;
+    text-align: center;
+    text-decoration: none;
+    font-size: calc(5px + 0.8vw);
+    transition: all 0.3s ease-in;
+    color: black;
+}
+
+nav a:hover , a:active{
+    background-color:rgb(133,133,133);
+    color: white;
+}
+
+.content{
+    position: relative;
+    top: 30vw;
+    width: 64vw;
+    height: 260vw;
+    margin-left: -32vw;
+    left: 50%;
+    box-shadow: 5px 5px 45px rgb(158, 158, 158);
+    z-index: 10;
+    background-color: rgba(255,255,255,0.55);
+}
+
+.explain{
+    display: flex;
+}
+
+[id^="ex"]{
+    font-size: calc(5px + 0.8vw);
+    position: relative;
+    padding: 2vw;
+    line-height: 3vw;
+    border-left: 1px solid rgb(158, 158, 158);
+}
+#ex1 , #ex3 {
+    width: 30%;
+}
+#ex2 ,#ex4{
+    width: 20%;
+}
+
+.explain p{
+    text-align: center;
+}
+
+.jie{
+    position: relative;
+    top:30vw;
+    width: 64vw;
+    /*background-color: burlywood;*/
+}
+
+.gong1{
+    background-image: url("img/jiepre.jpg");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    width: 20vw;
+    height: 30vw;
+
+}
+.gong1:hover{
+    background-image: url("img/jie.jpg");
+    transition:all 0.8s ease-in;
+}
+.jieword{
+    position: absolute;
+    top: 3vw;
+    left: 25vw;
+    letter-spacing: 0.4vw;
+    line-height: 3.5vw;
+    font-size: calc(6.5px + 0.8vw);
+}
+.zk{
+    color: black;
+}
+
+.zk:hover{
+    font-size: calc(12.5px + 0.8vw);
+    transition: all 0.3s ease-in;
+
+}
+
+#xb1{
+    letter-spacing: 0.6vw;
+    line-height: 8.5vw;
+}
+
+[class^="pic"]{
+    position: absolute;
+    top:88vw;
+    height: 30vw;
+}
+
+.pic1, .pic2 ,.pic3{
+    background-image: url("img/龙猫pre.jpg");
+}
+.pic1:hover ,.pic2:hover , .pic3:hover{
+    background-image: url("img/龙猫.jpg");
+    transition: all 0.8s ease-in;
+}
+.pic4 ,.pic5 ,.pic6{
+    top: 145vw;
+    background-image: url("img/猫的报恩pre.jpg");
+}
+.pic4:hover ,.pic5:hover , .pic6:hover{
+    background-image: url("img/猫的报恩.jpg");
+    transition: all 0.8s ease-in;
+}
+.pic1{
+    width: 7%;
+    left: 5%;
+    background-position-x: 25%;
+    background-position-y: 20%;
+}
+.pic2{
+    width:50% ;
+    left: 13.5%;
+    background-position-x: 45%;
+    background-position-y: 25%;
+}
+.pic3{
+    width: 30%;
+    left:65%;
+    background-position-x: 65%;
+    background-position-y: 55%;
+}
+.pic4{
+    width:63.5%;
+    left: 5%;
+    background-position-x: 5%;
+}
+.pic5{
+    width:11.25% ;
+    left: 70%;
+    background-position-x: 70%;
+}
+.pic6 {
+    width: 11.25%;
+    left: 83.75%;
+    background-position-x: 80%;
+}
+[class^="tword"]{
+    position: relative;
+    text-align: center;
+    font-size: calc(8.5px + 0.8vw);
+}
+.tword1{
+    top:92vw;
+}
+.tword2{
+    top: 147vw;
+}
+.ttu{
+    display: flex;
+    position: relative;
+    top: 180vw;
+    width: 64vw;
+    height: 30vw;
+}
+[class^="tu"]{
+    position: relative;
+    width: 30%;
+    left: 5%;
+}
+[class^="ttuimg"]{
+    width: 8vw;
+    height: 8vw;
+    background-size: cover;
+    position: relative;
+    left: 50%;
+    margin-left: -4vw;
+}
+.ttuimg1{
+    background-image: url("img/飞行艇pre.png");
+}
+.ttuimg1:hover{
+    background-image: url("img/飞行艇.png");
+    transition:all 0.8s ease-in;
+}
+.ttuimg2{
+    background-image: url("img/修那之旅pre.png");
+}
+.ttuimg2:hover{
+    background-image: url("img/修那之旅.png");
+    transition:all 0.8s ease-in;
+}
+.ttuimg3{
+    background-image: url("img/风之谷pre.png");
+}
+.ttuimg3:hover{
+    background-image: url("img/风之谷.png");
+    transition:all 0.8s ease-in;
+}
+
+
+[class^="ttuword"] {
+    writing-mode: vertical-lr;
+    writing-mode: tb-lr;
+    position: relative;
+    left: 42.5%;
+    top:2vw;
+    font-size: calc(6.5px + 0.8vw);
+}
+[class^="ttuword"]:hover{
+    font-size: calc(8.5px + 0.8vw);
+    top:3vw;
+    color: lightskyblue;
+    transition: all 0.5s ease-in;
+}
+@keyframes down {
+    from {
+        margin-top: 0;
+        opacity: 1;
+    }
+    50% {
+        margin-top: 0.5em;
+        opacity: 0.3;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+[class^="scroll-down"] {
+    z-index: 20;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.5em;
+    font-size: 3vw;
+    color: lightskyblue;
+    animation: down 1.5s ease infinite;
+}
+footer p{
+    position: relative;
+    top: 27vw;
+    left: 17vw;
+    text-align: center;
+    width: 64vw;
+    height: 20vw;
+    font-size: calc(2.5px + 0.8vw);
+}
+.scroll-down1{
+    top: 50vw;
+}
+.scroll-down2{
+    top:68vw;
+}
+.scroll-down3{
+    top:130vw;
+}
+.scroll-down4{
+    top: 190vw;
+}
+.top{
+    position: fixed;
+    float: right;
+    width: 5vw;
+    height: 5vw;
+    bottom: 0;
+    left: 5vw;
+}

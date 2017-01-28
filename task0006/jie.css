@@ -1,0 +1,80 @@
+*{
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+.imgg{
+    width: 50%;
+    height: 120vw;
+    background-image: url("img/g.jpg");
+    background-size: contain;
+    background-position-x: 50%;
+    position: absolute;
+    right: 0;
+}
+.topg{
+    position: fixed;
+    width: 15%;
+    height: 3vw;
+    bottom: 0;
+    right:0;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+.topg p{
+    position: relative;
+    top:30%;
+}
+.daog{
+    position: absolute;
+    top: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    right: 50%;
+}
+.daog img{
+    height: calc(12px + 0.5vw);
+    padding: 1.5vw;
+}
+.wordg{
+    position: relative;
+    width: 33%;
+    top: 25vw;
+    left: 8%;
+}
+
+.j2{
+    position: relative;
+    top:28vw;
+}
+[id^="wg"]{
+    font-size:calc( 12px + 0.5vw);
+    line-height: 27px;
+    position: relative;
+}
+[id^="wgb"]{
+    font-size:calc( 20px + 0.5vw);
+    color: darkgrey;
+}
+#wg1{
+    top:11vw;
+}
+#wg2{
+    top:12vw;
+}
+#wg3{
+    top:12vw;
+}
+#wg4{
+    top:13vw;
+}
+#wg5{
+    top:14vw;
+}
+#wg6{
+    top:15vw;
+}
