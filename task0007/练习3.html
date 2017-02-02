@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习3</title>
+</head>
+<body>
+<script>
+
+    function daojishi() {
+        var i,j;
+        var output=new Array();
+        j=0;
+        for(i=1;i<29;i++){
+            var
+                NowYear = 2017,    //某年份
+                NowMonth = 2,    //某月份
+                Nowday = i,     //某天
+                date = new Date(),
+                today= new Date(),
+                iday;
+
+
+            date.setFullYear(NowYear);//把当前年份设为某年
+            date.setMonth(NowMonth-1);//把当前月份设为某月
+            date.setDate(Nowday);//把当前日设为某天
+            if (date.getDay()==2){
+                output[j]="date:"+NowYear+"/"+NowMonth+"/"+Nowday+"</br>";
+                iday= parseInt(Math.abs(date - today) / 1000 / 60 / 60 /24);
+                output[j]=output[j]+"daysBefore:"+iday+"</br>";
+                j+=1;
+            }
+        }
+
+        document.write(output)
+    }
+
+
+</script>
+<button onclick="daojishi()">倒计时</button>
+
+</body>
+</html>

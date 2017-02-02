@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习2</title>
+</head>
+<body>
+<script>
+function change() {
+    var str=document.getElementById("code").value;
+    var strs= new Array();
+    strs=str.split(",");
+
+    var strn= new Array();
+    var p=1;
+    strn[0]=strs[0];
+    for(var i=1;i<strs.length;i++){
+        for(var j=0;j<strn.length;j++){
+            if(strs[i]==strn[j]){
+                p=0;
+            }
+        }
+        if(p==1){
+            strn[j]=strs[i];
+        }
+        p=1;
+
+    }
+    var re=document.getElementById("recode");
+    re.innerHTML=strn;
+}
+
+</script>
+<input id="code" type="text">
+<button type="button" onclick="change()">确定</button>
+<p id="recode"></p>
+</body>
+</html>

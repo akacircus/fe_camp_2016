@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宫崎骏</title>
+    <link rel="stylesheet " href="web.css">
+<style>
+
+</style>
+    <script>
+        window.onload = function() {
+            window.onscroll = function() {
+                var top = document.documentElement.scrollTop || document.body.scrollTop;
+
+                var menus = document.getElementById("menu").getElementsByTagName("a");
+
+                var items = getByClassName(document.getElementById("content"), "item");
+
+                var currentId = "";
+
+                for(var i = 0; i < items.length; i++) {
+                    var _item = items[i];
+                    var _itemTop = _item.offsetTop;
+                    if (top > _itemTop - 200) {
+                        currentId = _item.id;
+                    } else {
+                        break;
+                    }
+                }
+                if (currentId) {
+                    for(var j = 0; j < menus.length; j++) {
+                        var _menu = menus[j];
+                        var _href = _menu.href.split("#");
+                        if (_href[_href.length-1] != currentId) {
+                            removeClass(_menu, "current");
+                        } else {
+                            addClass(_menu, "current");
+                        }
+                    }
+                }
+            }
+        }
+        function getByClassName(obj, cls) {
+            var elements = obj.getElementsByTagName("*");
+            var result = [];
+            for(var i = 0; i < elements.length; i++){
+                if(elements[i].className == cls){
+                    result.push(elements[i]);
+                }
+            }
+            return result;
+        }
+        function hasClass(obj, cls) {
+            return obj.className.match(new RegExp("(\\s|^)" + cls + "(\\s|$)"));
+        }
+
+        function removeClass(obj, cls) {
+            if (hasClass(obj, cls)) {
+                var reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
+                obj.className = obj.className.replace(reg, "");
+            }
+        }
+
+        function addClass(obj, cls) {
+            if(!hasClass(obj, cls)){
+                obj.className += " " + cls;
+            }
+        }
+    </script>
+</head>
+
+
+<body>
+<header>
+
+    <div class="banner">
+        <div class="gong">
+            <p class="wordgong">宫崎骏</p>
+        </div>
+    </div>
+<div id="menu">
+    <ul>
+        <li><a href="#item1">宫崎骏</a></li>
+        <li><a href="#item2">导演</a></li>
+        <li><a href="#item3">制作人</a></li>
+        <li><a href="#item4">图本</a></li>
+    </ul>
+</div>
+        <div class="explain">
+            <div id="ex1"><p>早年经历</p><p>工作经历</p></div>
+            <div id="ex2"><p>《龙猫》</p><p>等作品介绍</p></div>
+            <div id="ex3"><p>《猫的报恩》</p><p>等作品介绍</p></div>
+            <div id="ex4"><p>《穿长靴的猫》</p><p>等作品介绍</p></div>
+        </div>
+</header>
+
+<i class="scroll-down1"><a name="gong"></a>↓</i>
+
+<div id="content">
+    <div id="item1" class="item">
+        <div class="gong1"></div>
+        <div class="jieword">
+            <p id="xb1">宫崎骏</p>
+            <p>对动画产生兴趣的契机是《白蛇传》</p>
+            <p>二战后日本文艺界充满民主气息，宫崎骏因此崭露头角</p>
+            <a href="jie.html" class="zk">展开</a>
+        </div>
+    </div>
+
+    <i class="scroll-down2"><a name="dao"></a> ↓</i>
+
+    <div id="item2" class="item">
+        <div class="lmpic">
+            <div class="pic1"></div>
+            <div class="pic2"></div>
+            <div class="pic3"></div>
+        </div>
+        <a href="lm.html"><p class="tword1">有些烦恼，丢掉了，才有云淡风轻的机会。</p></a>
+    </div>
+
+        <i class="scroll-down3"><a name="zhi"></a>↓</i>
+
+    <div id="item3" class="item">
+        <div class="mbpic">
+            <div class="pic4"></div>
+            <div class="pic5"></div>
+            <div class="pic6"></div>
+        </div>
+        <p class="tword2">在这个世界上,一定有另一个自己,在做着我不敢做的事,在过着我想过的生活。 </p>
+    </div>
+
+    <i class="scroll-down4"><a name="tu"></a> ↓</i>
+
+    <div id="item4" class="item">
+        <div class="tu1">
+            <div class="ttuimg1"></div>
+            <p class="ttuword1">飞行艇</p>
+        </div>
+        <div class="tu2">
+            <div class="ttuimg2"></div>
+            <p class="ttuword2">修那之旅</p>
+        </div>
+        <div class="tu3">
+            <div class="ttuimg3"></div>
+            <p class="ttuword3">风之谷</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+<p>-2017.2.2-</p>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习1</title>
+</head>
+<body>
+<script>
+   function change() {
+       var str=document.getElementById("code").value;   //读取字符串
+       var a=str.replace(/-/g,"");       //替换连字符
+       a=a.toUpperCase();           //转变为大写
+       var b=document.getElementById("recode");
+       if (a.length==20){           //判断
+           b.innerHTML=a;
+       }
+      else {
+           b.innerHTML="异常：无效的密码格式"
+       }
+   }
+</script>
+
+<p>请输入密码：</p>
+<input id="code" type="text">
+<button type="button" onclick="change()">确定</button>
+<p id="recode"></p>
+</body>
+</html>

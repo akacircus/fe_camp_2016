@@ -1,0 +1,18 @@
+1）441. Arranging Coins
+思路：在sum小于n的情况下计算sum=1+2+3+...+i，返回i
+心得：可以反解出i
+
+2）35. Search Insert Position
+思路：折半法。Max>=min时，取数组的中间位置mid，array[mid]与n比较，若相等，返回n，若不等，根据比较结果重新确定min或max继续比较。
+
+3）459. Repeated Substring Pattern
+思路：在字符串中查找与第一个字母相同的字母及位置，再根据位置将字符串切分，比较切分后的字符串。
+心得：若满足要求，原字符串长度一定是重复字符串的长度的整数倍。可先找出str.length的所有公约数，再进行切分比较。
+
+4）263. Ugly Number
+思路：在余数为零时，让n除以2，3，5，若最后结果为1，则是ugly number。
+心得：了解了for-of循环
+
+5）202. Happy Number
+思路：数字n>=1时，可用 m=m+n%10*n%10; n=n/10;进行运算。将m的值存放在数组中。出现重复的项后循环结束。
+心得：可对方法进行优化：设置slow和fast两个变量，一次循环中slow运算一次，fast运算两次，fast=slow时循环结束。
